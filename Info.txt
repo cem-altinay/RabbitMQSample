@@ -1,0 +1,9 @@
+Baþvurulan Kaynak
+
+https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html
+https://www.borakasmer.com/rabbitmq-nedir/
+
+Producer: Mesajý atan kaynak yani uygulamadýr. Redis’deki Pub/Sub düþünüldüðünde Publisher tarafýdýr.
+Queue : Gönderilen mesajlar alýcaya ulaþtýrýlmadan önce bir sýraya konur. Gelen yoðunluða göre veya alýcýya eriþilemediði durumlarda, gelen tüm mesajlar Queue’de yani memory’de saklanýr. Eðer bu süreç uzun sürer ise memory þiþebilir. Ayrýca server’ýn restart edilmesi durumunda ilgili mesajlar kaybolabilir.
+Consumer: Gönderilen mesajý karþýlayan sunucudur. Yani Redis Pub/Sub’daki Subscribe’dýr. Kýsaca ilgili kuyruðu(Queue)’yu dinleyen taraftýr.
+Fifo: RabbitMQ’da giden mesajlarýn iþlem sýrasý first in first out yani ilk giren ilk çýkar þeklindedir.

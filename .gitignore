@@ -3,3 +3,7 @@
 ################################################################################
 
 /RabbitMQProducer/obj
+/RabbitMQProducer/bin/Debug/net6.0
+/RabbitMQConsumer/obj
+/RabbitMQConsumer/bin/Debug/net6.0
+/.vs/RabbitMQSample/v17
